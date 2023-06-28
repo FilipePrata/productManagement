@@ -1,0 +1,88 @@
+/* GENERAL */
+
+* {
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #303030;
+}
+    
+    img {
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #title {
+        color: antiquewhite;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+/* REGISTERING */
+
+#page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #pageTitle {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    #pageTitle p {
+        color: #535151;
+    }
+
+    #registerArea {
+        width: 90%;
+        background-color: rgba(203, 233, 243, 0.63);
+        border: 1px solid;
+        border-color: #948d8d91;
+        border-radius: 5px;
+    }
+
+    #registerArea p {
+        color: #4d4c4c;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .textInput {
+        width: 97%;
+        border: 1px solid;
+        border-color: #948d8d91;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #buttons {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #buttons input {
+        background-color: #303030;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #buttons input:hover {
+        transform: translateY(-3px);
+        transition-duration: 0.4s;
+        background-color: black;
+    }
+

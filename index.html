@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--HEADER-->
+
+    <header>
+        <div id="logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+        <div id="title">
+            <h1>Controle de Produtos</h1>
+        </div>
+    </header>
+
+    <div id="page">
+        <!--REGISTER-->
+
+            <div id="pageTitle">
+                <h2>Produtos</h2>
+                <p>Lista de Produtos</p>
+            </div>
+            <div id="registerArea">
+                <p>
+                    Produto <br>
+                    <input type="text" placeholder="Nome do Produto" class="textInput">
+                </p>
+                <p id="value">
+                    Valor <br>
+                    <input type="number" placeholder="R$ 00,00" class="textInput">
+                </p> <br>
+                <div id="buttons">
+                    <input type="button" value="Adicionar">
+                    <input type="button" value="Cancelar">
+                </div>
+            </div>
+
+        <!--PRODUCTS TABLE-->
+
+            <div id="products">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th>Editar</th>
+                    </tr>
+                </table>
+            </div>
+
+    </div>
+</body>
+</html>
