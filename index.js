@@ -10,6 +10,7 @@ class Product {
             this.save(produto)
         }
         this.list()
+        this.cancel()
     }
 
     readData() {
@@ -63,9 +64,21 @@ class Product {
             td_name.innerText = this.arrayProducts[i].name; 
             td_price.innerText = this.arrayProducts[i].price;
             let imagem = document.createElement("img")
+            imagem.setAttribute("onclick", "produto.delete("+this.arrayProducts[i].id+")")
             imagem.src = "./img/trash-solid.svg"
             td_del.appendChild(imagem)
         }
+    }
+
+    cancel() {
+        document.getElementById("productName").value = ""
+        document.getElementById("productPrice").value = ""
+    }
+
+    delete(id) {
+        this.arrayProducts.splice(id-1, 1 )
+        alert("O item foi apagado com sucesso")
+        this.list()
     }
 }
 
