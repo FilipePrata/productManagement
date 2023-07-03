@@ -109,6 +109,12 @@ table {
     }
 
     table td {
-        padding: 1px;
+        padding: 2.5px;
+        text-align: center;
+    }
+
+    table td img {
+        width: 20px;
+        margin: 0px;
     }
 
