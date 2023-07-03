@@ -29,14 +29,14 @@
             <div id="registerArea">
                 <p>
                     Produto <br>
-                    <input type="text" placeholder="Nome do Produto" class="textInput">
+                    <input type="text" id="productName" placeholder="Nome do Produto" class="textInput">
                 </p>
                 <p id="value">
                     Valor <br>
-                    <input type="number" placeholder="R$ 00,00" class="textInput">
+                    <input type="number" id="productPrice" placeholder="R$ 00,00" class="textInput">
                 </p> <br>
                 <div id="buttons">
-                    <input type="button" value="Adicionar">
+                    <input type="button" value="Adicionar" onclick="produto.add()">
                     <input type="button" value="Cancelar">
                 </div>
             </div>
@@ -66,5 +66,6 @@
             </div>
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
